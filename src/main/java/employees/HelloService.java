@@ -1,0 +1,17 @@
+package employees;
+
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+
+@Service
+public class HelloService {
+
+    public String sayHello() {
+        return "Hello Spring Boot (service) " + LocalDateTime.now();
+    }
+
+    public String sayGoodBy() {
+        return "Good by Spring Boot (service devtools LiveReload) " + LocalDateTime.now();
+    }
+}
